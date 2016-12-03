@@ -14,7 +14,7 @@ class SlideZoomInLayout: UICollectionViewFlowLayout {
         
         if let collectionView = collectionView {
             let delegate = collectionView.delegate as? UICollectionViewDelegateFlowLayout
-            itemSize = delegate?.collectionView!(collectionView, layout: self, sizeForItemAt: IndexPath(item: 0, section: 0)) ?? CGSize.zero
+            itemSize = delegate?.collectionView!(collectionView, layout: self, sizeForItemAt: IndexPath(item: 0, section: 0)) ?? itemSize
             let offset = (collectionView.frame.width - itemSize.width) / CGFloat(2)
             //使得第一个、最后一个cell也能居中
             sectionInset = UIEdgeInsets(top: 0, left: offset, bottom: 0, right: offset)

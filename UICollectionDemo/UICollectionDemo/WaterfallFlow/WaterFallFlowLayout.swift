@@ -28,8 +28,8 @@ class WaterFallFlowLayout: UICollectionViewFlowLayout {
         if let collectionView = collectionView {
             //根据代理方法获取设置的minimumInteritemSpacing、minimumLineSpacing值
             let delegate = collectionView.delegate as? UICollectionViewDelegateFlowLayout
-            minimumInteritemSpacing = delegate?.collectionView?(collectionView, layout: self, minimumInteritemSpacingForSectionAt: 0) ?? 10
-            minimumLineSpacing = delegate?.collectionView?(collectionView, layout: self, minimumLineSpacingForSectionAt: 0) ?? 10
+            minimumInteritemSpacing = delegate?.collectionView?(collectionView, layout: self, minimumInteritemSpacingForSectionAt: 0) ?? minimumInteritemSpacing
+            minimumLineSpacing = delegate?.collectionView?(collectionView, layout: self, minimumLineSpacingForSectionAt: 0) ?? minimumLineSpacing
             
             //计算每一个item的宽度
             let viewWidth = collectionView.frame.width

@@ -100,8 +100,8 @@
 		7478C0711DF2982D0038CC75 /* SlideZoomIn */ = {
 			isa = PBXGroup;
 			children = (
-				7478C0721DF2983F0038CC75 /* SlideZoomInVC.swift */,
 				7478C0741DF2985E0038CC75 /* SlideZoomInLayout.swift */,
+				7478C0721DF2983F0038CC75 /* SlideZoomInVC.swift */,
 			);
 			path = SlideZoomIn;
 			sourceTree = "<group>";
