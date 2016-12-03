@@ -1,8 +1,8 @@
 //
 //  WaterFallFlowLayout.swift
-//  WaterfallFlowDemo
+//  UICollectionDemo
 //
-//  Created by xiabob on 16/12/2.
+//  Created by xiabob on 16/12/3.
 //  Copyright © 2016年 xiabob. All rights reserved.
 //
 
@@ -113,5 +113,6 @@ class WaterFallFlowLayout: UICollectionViewFlowLayout {
         
         return false
     }
+
 
 }

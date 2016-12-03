@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7455A6E41DF15572000D9DF6"
-               BuildableName = "WaterfallFlowDemo.app"
-               BlueprintName = "WaterfallFlowDemo"
-               ReferencedContainer = "container:WaterfallFlowDemo.xcodeproj">
+               BlueprintIdentifier = "743B7CE01DF2573000E1F0AC"
+               BuildableName = "UICollectionDemo.app"
+               BlueprintName = "UICollectionDemo"
+               ReferencedContainer = "container:UICollectionDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7455A6E41DF15572000D9DF6"
-            BuildableName = "WaterfallFlowDemo.app"
-            BlueprintName = "WaterfallFlowDemo"
-            ReferencedContainer = "container:WaterfallFlowDemo.xcodeproj">
+            BlueprintIdentifier = "743B7CE01DF2573000E1F0AC"
+            BuildableName = "UICollectionDemo.app"
+            BlueprintName = "UICollectionDemo"
+            ReferencedContainer = "container:UICollectionDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7455A6E41DF15572000D9DF6"
-            BuildableName = "WaterfallFlowDemo.app"
-            BlueprintName = "WaterfallFlowDemo"
-            ReferencedContainer = "container:WaterfallFlowDemo.xcodeproj">
+            BlueprintIdentifier = "743B7CE01DF2573000E1F0AC"
+            BuildableName = "UICollectionDemo.app"
+            BlueprintName = "UICollectionDemo"
+            ReferencedContainer = "container:UICollectionDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7455A6E41DF15572000D9DF6"
-            BuildableName = "WaterfallFlowDemo.app"
-            BlueprintName = "WaterfallFlowDemo"
-            ReferencedContainer = "container:WaterfallFlowDemo.xcodeproj">
+            BlueprintIdentifier = "743B7CE01DF2573000E1F0AC"
+            BuildableName = "UICollectionDemo.app"
+            BlueprintName = "UICollectionDemo"
+            ReferencedContainer = "container:UICollectionDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

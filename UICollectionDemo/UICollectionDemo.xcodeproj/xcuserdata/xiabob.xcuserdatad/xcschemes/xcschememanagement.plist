@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WaterfallFlowDemo.xcscheme</key>
+		<key>UICollectionDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7455A6E41DF15572000D9DF6</key>
+		<key>743B7CE01DF2573000E1F0AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

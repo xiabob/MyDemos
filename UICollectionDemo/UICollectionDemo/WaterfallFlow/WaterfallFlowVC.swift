@@ -1,25 +1,34 @@
 //
-//  ViewController.swift
-//  WaterfallFlowDemo
+//  WaterfallFlowVC.swift
+//  UICollectionDemo
 //
-//  Created by xiabob on 16/12/2.
+//  Created by xiabob on 16/12/3.
 //  Copyright © 2016年 xiabob. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+class WaterfallFlowVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
-    @IBOutlet weak var flowCollectionView: UICollectionView!
-    
+    private lazy var flowCollectionView: UICollectionView = {
+        let rect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        let flow = WaterFallFlowLayout()
+        let view = UICollectionView(frame: rect, collectionViewLayout: flow)
+        view.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        view.delegate = self
+        view.dataSource = self
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        flowCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        flowCollectionView.delegate = self
-        flowCollectionView.dataSource = self
+        view.backgroundColor = UIColor.white
+        view.addSubview(flowCollectionView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         flowCollectionView.reloadData()
     }
     
@@ -64,7 +73,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
 
 }
-

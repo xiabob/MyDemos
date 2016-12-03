@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7455A6E91DF15572000D9DF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455A6E81DF15572000D9DF6 /* AppDelegate.swift */; };
-		7455A6EB1DF15572000D9DF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455A6EA1DF15572000D9DF6 /* ViewController.swift */; };
-		7455A6EE1DF15572000D9DF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7455A6EC1DF15572000D9DF6 /* Main.storyboard */; };
-		7455A6F01DF15572000D9DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7455A6EF1DF15572000D9DF6 /* Assets.xcassets */; };
-		7455A6F31DF15572000D9DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7455A6F11DF15572000D9DF6 /* LaunchScreen.storyboard */; };
-		7455A6FB1DF15699000D9DF6 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7455A6FA1DF15699000D9DF6 /* WaterFallFlowLayout.swift */; };
+		743B7CE51DF2573000E1F0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CE41DF2573000E1F0AC /* AppDelegate.swift */; };
+		743B7CE71DF2573000E1F0AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CE61DF2573000E1F0AC /* ViewController.swift */; };
+		743B7CEA1DF2573000E1F0AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743B7CE81DF2573000E1F0AC /* Main.storyboard */; };
+		743B7CEC1DF2573000E1F0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743B7CEB1DF2573000E1F0AC /* Assets.xcassets */; };
+		743B7CEF1DF2573000E1F0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743B7CED1DF2573000E1F0AC /* LaunchScreen.storyboard */; };
+		743B7CF81DF2596700E1F0AC /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CF71DF2596700E1F0AC /* WaterFallFlowLayout.swift */; };
+		743B7CFB1DF2599600E1F0AC /* WaterfallFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7455A6E51DF15572000D9DF6 /* WaterfallFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterfallFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7455A6E81DF15572000D9DF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7455A6EA1DF15572000D9DF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7455A6ED1DF15572000D9DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7455A6EF1DF15572000D9DF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7455A6F21DF15572000D9DF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7455A6F41DF15572000D9DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7455A6FA1DF15699000D9DF6 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
+		743B7CE11DF2573000E1F0AC /* UICollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		743B7CE41DF2573000E1F0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		743B7CE61DF2573000E1F0AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		743B7CE91DF2573000E1F0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		743B7CEB1DF2573000E1F0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		743B7CEE1DF2573000E1F0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		743B7CF01DF2573000E1F0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743B7CF71DF2596700E1F0AC /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
+		743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallFlowVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7455A6E21DF15572000D9DF6 /* Frameworks */ = {
+		743B7CDE1DF2573000E1F0AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,74 +39,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7455A6DC1DF15572000D9DF6 = {
+		743B7CD81DF2573000E1F0AC = {
 			isa = PBXGroup;
 			children = (
-				7455A6E71DF15572000D9DF6 /* WaterfallFlowDemo */,
-				7455A6E61DF15572000D9DF6 /* Products */,
+				743B7CE31DF2573000E1F0AC /* UICollectionDemo */,
+				743B7CE21DF2573000E1F0AC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7455A6E61DF15572000D9DF6 /* Products */ = {
+		743B7CE21DF2573000E1F0AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7455A6E51DF15572000D9DF6 /* WaterfallFlowDemo.app */,
+				743B7CE11DF2573000E1F0AC /* UICollectionDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7455A6E71DF15572000D9DF6 /* WaterfallFlowDemo */ = {
+		743B7CE31DF2573000E1F0AC /* UICollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7455A6E81DF15572000D9DF6 /* AppDelegate.swift */,
-				7455A6EA1DF15572000D9DF6 /* ViewController.swift */,
-				7455A6FA1DF15699000D9DF6 /* WaterFallFlowLayout.swift */,
-				7455A6EC1DF15572000D9DF6 /* Main.storyboard */,
-				7455A6EF1DF15572000D9DF6 /* Assets.xcassets */,
-				7455A6F11DF15572000D9DF6 /* LaunchScreen.storyboard */,
-				7455A6F41DF15572000D9DF6 /* Info.plist */,
+				743B7CF61DF2594500E1F0AC /* WaterfallFlow */,
+				743B7CE41DF2573000E1F0AC /* AppDelegate.swift */,
+				743B7CE61DF2573000E1F0AC /* ViewController.swift */,
+				743B7CE81DF2573000E1F0AC /* Main.storyboard */,
+				743B7CEB1DF2573000E1F0AC /* Assets.xcassets */,
+				743B7CED1DF2573000E1F0AC /* LaunchScreen.storyboard */,
+				743B7CF01DF2573000E1F0AC /* Info.plist */,
 			);
-			path = WaterfallFlowDemo;
+			path = UICollectionDemo;
+			sourceTree = "<group>";
+		};
+		743B7CF61DF2594500E1F0AC /* WaterfallFlow */ = {
+			isa = PBXGroup;
+			children = (
+				743B7CF71DF2596700E1F0AC /* WaterFallFlowLayout.swift */,
+				743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */,
+			);
+			path = WaterfallFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7455A6E41DF15572000D9DF6 /* WaterfallFlowDemo */ = {
+		743B7CE01DF2573000E1F0AC /* UICollectionDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7455A6F71DF15572000D9DF6 /* Build configuration list for PBXNativeTarget "WaterfallFlowDemo" */;
+			buildConfigurationList = 743B7CF31DF2573000E1F0AC /* Build configuration list for PBXNativeTarget "UICollectionDemo" */;
 			buildPhases = (
-				7455A6E11DF15572000D9DF6 /* Sources */,
-				7455A6E21DF15572000D9DF6 /* Frameworks */,
-				7455A6E31DF15572000D9DF6 /* Resources */,
+				743B7CDD1DF2573000E1F0AC /* Sources */,
+				743B7CDE1DF2573000E1F0AC /* Frameworks */,
+				743B7CDF1DF2573000E1F0AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WaterfallFlowDemo;
-			productName = WaterfallFlowDemo;
-			productReference = 7455A6E51DF15572000D9DF6 /* WaterfallFlowDemo.app */;
+			name = UICollectionDemo;
+			productName = UICollectionDemo;
+			productReference = 743B7CE11DF2573000E1F0AC /* UICollectionDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7455A6DD1DF15572000D9DF6 /* Project object */ = {
+		743B7CD91DF2573000E1F0AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = xiabob;
 				TargetAttributes = {
-					7455A6E41DF15572000D9DF6 = {
+					743B7CE01DF2573000E1F0AC = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = WPR8JVVW9L;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7455A6E01DF15572000D9DF6 /* Build configuration list for PBXProject "WaterfallFlowDemo" */;
+			buildConfigurationList = 743B7CDC1DF2573000E1F0AC /* Build configuration list for PBXProject "UICollectionDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,55 +123,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 7455A6DC1DF15572000D9DF6;
-			productRefGroup = 7455A6E61DF15572000D9DF6 /* Products */;
+			mainGroup = 743B7CD81DF2573000E1F0AC;
+			productRefGroup = 743B7CE21DF2573000E1F0AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7455A6E41DF15572000D9DF6 /* WaterfallFlowDemo */,
+				743B7CE01DF2573000E1F0AC /* UICollectionDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7455A6E31DF15572000D9DF6 /* Resources */ = {
+		743B7CDF1DF2573000E1F0AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7455A6F31DF15572000D9DF6 /* LaunchScreen.storyboard in Resources */,
-				7455A6F01DF15572000D9DF6 /* Assets.xcassets in Resources */,
-				7455A6EE1DF15572000D9DF6 /* Main.storyboard in Resources */,
+				743B7CEF1DF2573000E1F0AC /* LaunchScreen.storyboard in Resources */,
+				743B7CEC1DF2573000E1F0AC /* Assets.xcassets in Resources */,
+				743B7CEA1DF2573000E1F0AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7455A6E11DF15572000D9DF6 /* Sources */ = {
+		743B7CDD1DF2573000E1F0AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7455A6FB1DF15699000D9DF6 /* WaterFallFlowLayout.swift in Sources */,
-				7455A6EB1DF15572000D9DF6 /* ViewController.swift in Sources */,
-				7455A6E91DF15572000D9DF6 /* AppDelegate.swift in Sources */,
+				743B7CF81DF2596700E1F0AC /* WaterFallFlowLayout.swift in Sources */,
+				743B7CE71DF2573000E1F0AC /* ViewController.swift in Sources */,
+				743B7CE51DF2573000E1F0AC /* AppDelegate.swift in Sources */,
+				743B7CFB1DF2599600E1F0AC /* WaterfallFlowVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7455A6EC1DF15572000D9DF6 /* Main.storyboard */ = {
+		743B7CE81DF2573000E1F0AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7455A6ED1DF15572000D9DF6 /* Base */,
+				743B7CE91DF2573000E1F0AC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7455A6F11DF15572000D9DF6 /* LaunchScreen.storyboard */ = {
+		743B7CED1DF2573000E1F0AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7455A6F21DF15572000D9DF6 /* Base */,
+				743B7CEE1DF2573000E1F0AC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -168,7 +180,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7455A6F51DF15572000D9DF6 /* Debug */ = {
+		743B7CF11DF2573000E1F0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		7455A6F61DF15572000D9DF6 /* Release */ = {
+		743B7CF21DF2573000E1F0AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,29 +271,29 @@
 			};
 			name = Release;
 		};
-		7455A6F81DF15572000D9DF6 /* Debug */ = {
+		743B7CF41DF2573000E1F0AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WPR8JVVW9L;
-				INFOPLIST_FILE = WaterfallFlowDemo/Info.plist;
+				INFOPLIST_FILE = UICollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.WaterfallFlowDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.UICollectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		7455A6F91DF15572000D9DF6 /* Release */ = {
+		743B7CF51DF2573000E1F0AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WPR8JVVW9L;
-				INFOPLIST_FILE = WaterfallFlowDemo/Info.plist;
+				INFOPLIST_FILE = UICollectionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.WaterfallFlowDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.UICollectionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -290,24 +302,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7455A6E01DF15572000D9DF6 /* Build configuration list for PBXProject "WaterfallFlowDemo" */ = {
+		743B7CDC1DF2573000E1F0AC /* Build configuration list for PBXProject "UICollectionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7455A6F51DF15572000D9DF6 /* Debug */,
-				7455A6F61DF15572000D9DF6 /* Release */,
+				743B7CF11DF2573000E1F0AC /* Debug */,
+				743B7CF21DF2573000E1F0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7455A6F71DF15572000D9DF6 /* Build configuration list for PBXNativeTarget "WaterfallFlowDemo" */ = {
+		743B7CF31DF2573000E1F0AC /* Build configuration list for PBXNativeTarget "UICollectionDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7455A6F81DF15572000D9DF6 /* Debug */,
-				7455A6F91DF15572000D9DF6 /* Release */,
+				743B7CF41DF2573000E1F0AC /* Debug */,
+				743B7CF51DF2573000E1F0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7455A6DD1DF15572000D9DF6 /* Project object */;
+	rootObject = 743B7CD91DF2573000E1F0AC /* Project object */;
 }
