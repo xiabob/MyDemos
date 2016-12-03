@@ -14,6 +14,8 @@
 		743B7CEF1DF2573000E1F0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743B7CED1DF2573000E1F0AC /* LaunchScreen.storyboard */; };
 		743B7CF81DF2596700E1F0AC /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CF71DF2596700E1F0AC /* WaterFallFlowLayout.swift */; };
 		743B7CFB1DF2599600E1F0AC /* WaterfallFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */; };
+		7478C06E1DF2648E0038CC75 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C06D1DF2648E0038CC75 /* CardLayout.swift */; };
+		7478C0701DF265DA0038CC75 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C06F1DF265DA0038CC75 /* CardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		743B7CF01DF2573000E1F0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743B7CF71DF2596700E1F0AC /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
 		743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallFlowVC.swift; sourceTree = "<group>"; };
+		7478C06D1DF2648E0038CC75 /* CardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
+		7478C06F1DF265DA0038CC75 /* CardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		743B7CE31DF2573000E1F0AC /* UICollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7478C06C1DF264690038CC75 /* Card */,
 				743B7CF61DF2594500E1F0AC /* WaterfallFlow */,
 				743B7CE41DF2573000E1F0AC /* AppDelegate.swift */,
 				743B7CE61DF2573000E1F0AC /* ViewController.swift */,
@@ -76,6 +81,15 @@
 				743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */,
 			);
 			path = WaterfallFlow;
+			sourceTree = "<group>";
+		};
+		7478C06C1DF264690038CC75 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				7478C06D1DF2648E0038CC75 /* CardLayout.swift */,
+				7478C06F1DF265DA0038CC75 /* CardVC.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7478C0701DF265DA0038CC75 /* CardVC.swift in Sources */,
+				7478C06E1DF2648E0038CC75 /* CardLayout.swift in Sources */,
 				743B7CF81DF2596700E1F0AC /* WaterFallFlowLayout.swift in Sources */,
 				743B7CE71DF2573000E1F0AC /* ViewController.swift in Sources */,
 				743B7CE51DF2573000E1F0AC /* AppDelegate.swift in Sources */,
@@ -318,6 +334,7 @@
 				743B7CF51DF2573000E1F0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

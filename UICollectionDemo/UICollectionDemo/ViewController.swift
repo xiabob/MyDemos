@@ -12,7 +12,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
-    private let dataArray = [["瀑布流": WaterfallFlowVC()]]
+    private let dataArray: [Dictionary<String, UIViewController>] = [
+        ["瀑布流": WaterfallFlowVC()],
+        ["卡片": CardVC()]
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
