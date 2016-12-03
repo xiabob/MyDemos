@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>VolumeManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>VolumeTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>744F33751DD2C123001C15F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>744F338E1DD2C123001C15F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>744F33991DD2C123001C15F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DEEFA21DD402F800BFF41B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

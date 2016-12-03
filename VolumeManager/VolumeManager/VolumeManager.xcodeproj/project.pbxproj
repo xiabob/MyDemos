@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13DD116CF5ADEAB6247A216D /* libPods-VolumeManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8F32EC440B3554CDB75D89 /* libPods-VolumeManager.a */; };
+		744F337B1DD2C123001C15F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F337A1DD2C123001C15F7 /* main.m */; };
+		744F337E1DD2C123001C15F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F337D1DD2C123001C15F7 /* AppDelegate.m */; };
+		744F33811DD2C123001C15F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F33801DD2C123001C15F7 /* ViewController.m */; };
+		744F33841DD2C123001C15F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744F33821DD2C123001C15F7 /* Main.storyboard */; };
+		744F33861DD2C123001C15F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744F33851DD2C123001C15F7 /* Assets.xcassets */; };
+		744F33891DD2C123001C15F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744F33871DD2C123001C15F7 /* LaunchScreen.storyboard */; };
+		744F33941DD2C123001C15F7 /* VolumeManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F33931DD2C123001C15F7 /* VolumeManagerTests.m */; };
+		744F339F1DD2C123001C15F7 /* VolumeManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F339E1DD2C123001C15F7 /* VolumeManagerUITests.m */; };
+		744F33AE1DD2CC3E001C15F7 /* VolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 744F33AD1DD2CC3E001C15F7 /* VolumeView.m */; };
+		74DEEFA51DD402F900BFF41B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DEEFA41DD402F900BFF41B /* NotificationCenter.framework */; };
+		74DEEFA91DD402F900BFF41B /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEFA81DD402F900BFF41B /* TodayViewController.m */; };
+		74DEEFAC1DD402F900BFF41B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEFAA1DD402F900BFF41B /* MainInterface.storyboard */; };
+		74DEEFB01DD402F900BFF41B /* VolumeTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74DEEFA31DD402F800BFF41B /* VolumeTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		744F33901DD2C123001C15F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744F336E1DD2C123001C15F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744F33751DD2C123001C15F7;
+			remoteInfo = VolumeManager;
+		};
+		744F339B1DD2C123001C15F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744F336E1DD2C123001C15F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744F33751DD2C123001C15F7;
+			remoteInfo = VolumeManager;
+		};
+		74DEEFAE1DD402F900BFF41B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744F336E1DD2C123001C15F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74DEEFA21DD402F800BFF41B;
+			remoteInfo = VolumeTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74DEEFB41DD402F900BFF41B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74DEEFB01DD402F900BFF41B /* VolumeTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A8F32EC440B3554CDB75D89 /* libPods-VolumeManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VolumeManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		704348B7F64C748D5A96D97A /* Pods-VolumeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-VolumeManager/Pods-VolumeManager.release.xcconfig"; sourceTree = "<group>"; };
+		744F33761DD2C123001C15F7 /* VolumeManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		744F337A1DD2C123001C15F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		744F337C1DD2C123001C15F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		744F337D1DD2C123001C15F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		744F337F1DD2C123001C15F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		744F33801DD2C123001C15F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		744F33831DD2C123001C15F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		744F33851DD2C123001C15F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		744F33881DD2C123001C15F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		744F338A1DD2C123001C15F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744F338F1DD2C123001C15F7 /* VolumeManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744F33931DD2C123001C15F7 /* VolumeManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeManagerTests.m; sourceTree = "<group>"; };
+		744F33951DD2C123001C15F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744F339A1DD2C123001C15F7 /* VolumeManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		744F339E1DD2C123001C15F7 /* VolumeManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeManagerUITests.m; sourceTree = "<group>"; };
+		744F33A01DD2C123001C15F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744F33AC1DD2CC3E001C15F7 /* VolumeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeView.h; sourceTree = "<group>"; };
+		744F33AD1DD2CC3E001C15F7 /* VolumeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeView.m; sourceTree = "<group>"; };
+		744F33AF1DD2CE5A001C15F7 /* XBCommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCommonDefine.h; sourceTree = "<group>"; };
+		74DEEFA31DD402F800BFF41B /* VolumeTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VolumeTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		74DEEFA41DD402F900BFF41B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		74DEEFA71DD402F900BFF41B /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		74DEEFA81DD402F900BFF41B /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		74DEEFAB1DD402F900BFF41B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		74DEEFAD1DD402F900BFF41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DEEFB51DD4082900BFF41B /* VolumeTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolumeTodayExtension.entitlements; sourceTree = "<group>"; };
+		74DEEFB61DD4087E00BFF41B /* VolumeManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VolumeManager.entitlements; sourceTree = "<group>"; };
+		EFB794B04E0581D88B14AFB8 /* Pods-VolumeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VolumeManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VolumeManager/Pods-VolumeManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744F33731DD2C123001C15F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13DD116CF5ADEAB6247A216D /* libPods-VolumeManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F338C1DD2C123001C15F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F33971DD2C123001C15F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEEFA01DD402F800BFF41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEEFA51DD402F900BFF41B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		744F336D1DD2C123001C15F7 = {
+			isa = PBXGroup;
+			children = (
+				744F33781DD2C123001C15F7 /* VolumeManager */,
+				744F33921DD2C123001C15F7 /* VolumeManagerTests */,
+				744F339D1DD2C123001C15F7 /* VolumeManagerUITests */,
+				74DEEFA61DD402F900BFF41B /* VolumeTodayExtension */,
+				744F33771DD2C123001C15F7 /* Products */,
+				F1E810F3C59CA19CB28FD53F /* Pods */,
+				F64F90791839572E363A1F8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		744F33771DD2C123001C15F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744F33761DD2C123001C15F7 /* VolumeManager.app */,
+				744F338F1DD2C123001C15F7 /* VolumeManagerTests.xctest */,
+				744F339A1DD2C123001C15F7 /* VolumeManagerUITests.xctest */,
+				74DEEFA31DD402F800BFF41B /* VolumeTodayExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744F33781DD2C123001C15F7 /* VolumeManager */ = {
+			isa = PBXGroup;
+			children = (
+				74DEEFB61DD4087E00BFF41B /* VolumeManager.entitlements */,
+				744F33AF1DD2CE5A001C15F7 /* XBCommonDefine.h */,
+				744F337C1DD2C123001C15F7 /* AppDelegate.h */,
+				744F337D1DD2C123001C15F7 /* AppDelegate.m */,
+				744F337F1DD2C123001C15F7 /* ViewController.h */,
+				744F33801DD2C123001C15F7 /* ViewController.m */,
+				744F33AC1DD2CC3E001C15F7 /* VolumeView.h */,
+				744F33AD1DD2CC3E001C15F7 /* VolumeView.m */,
+				744F33821DD2C123001C15F7 /* Main.storyboard */,
+				744F33851DD2C123001C15F7 /* Assets.xcassets */,
+				744F33871DD2C123001C15F7 /* LaunchScreen.storyboard */,
+				744F338A1DD2C123001C15F7 /* Info.plist */,
+				744F33791DD2C123001C15F7 /* Supporting Files */,
+			);
+			path = VolumeManager;
+			sourceTree = "<group>";
+		};
+		744F33791DD2C123001C15F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				744F337A1DD2C123001C15F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		744F33921DD2C123001C15F7 /* VolumeManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				744F33931DD2C123001C15F7 /* VolumeManagerTests.m */,
+				744F33951DD2C123001C15F7 /* Info.plist */,
+			);
+			path = VolumeManagerTests;
+			sourceTree = "<group>";
+		};
+		744F339D1DD2C123001C15F7 /* VolumeManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				744F339E1DD2C123001C15F7 /* VolumeManagerUITests.m */,
+				744F33A01DD2C123001C15F7 /* Info.plist */,
+			);
+			path = VolumeManagerUITests;
+			sourceTree = "<group>";
+		};
+		74DEEFA61DD402F900BFF41B /* VolumeTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				74DEEFB51DD4082900BFF41B /* VolumeTodayExtension.entitlements */,
+				74DEEFA71DD402F900BFF41B /* TodayViewController.h */,
+				74DEEFA81DD402F900BFF41B /* TodayViewController.m */,
+				74DEEFAA1DD402F900BFF41B /* MainInterface.storyboard */,
+				74DEEFAD1DD402F900BFF41B /* Info.plist */,
+			);
+			path = VolumeTodayExtension;
+			sourceTree = "<group>";
+		};
+		F1E810F3C59CA19CB28FD53F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFB794B04E0581D88B14AFB8 /* Pods-VolumeManager.debug.xcconfig */,
+				704348B7F64C748D5A96D97A /* Pods-VolumeManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F64F90791839572E363A1F8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A8F32EC440B3554CDB75D89 /* libPods-VolumeManager.a */,
+				74DEEFA41DD402F900BFF41B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744F33751DD2C123001C15F7 /* VolumeManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744F33A31DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManager" */;
+			buildPhases = (
+				9BA88454AF085E3132106E51 /* [CP] Check Pods Manifest.lock */,
+				744F33721DD2C123001C15F7 /* Sources */,
+				744F33731DD2C123001C15F7 /* Frameworks */,
+				744F33741DD2C123001C15F7 /* Resources */,
+				2835702468356E2ABFA44755 /* [CP] Embed Pods Frameworks */,
+				F04EDBD858492D316F07C774 /* [CP] Copy Pods Resources */,
+				74DEEFB41DD402F900BFF41B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74DEEFAF1DD402F900BFF41B /* PBXTargetDependency */,
+			);
+			name = VolumeManager;
+			productName = VolumeManager;
+			productReference = 744F33761DD2C123001C15F7 /* VolumeManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		744F338E1DD2C123001C15F7 /* VolumeManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744F33A61DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManagerTests" */;
+			buildPhases = (
+				744F338B1DD2C123001C15F7 /* Sources */,
+				744F338C1DD2C123001C15F7 /* Frameworks */,
+				744F338D1DD2C123001C15F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744F33911DD2C123001C15F7 /* PBXTargetDependency */,
+			);
+			name = VolumeManagerTests;
+			productName = VolumeManagerTests;
+			productReference = 744F338F1DD2C123001C15F7 /* VolumeManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		744F33991DD2C123001C15F7 /* VolumeManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744F33A91DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManagerUITests" */;
+			buildPhases = (
+				744F33961DD2C123001C15F7 /* Sources */,
+				744F33971DD2C123001C15F7 /* Frameworks */,
+				744F33981DD2C123001C15F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				744F339C1DD2C123001C15F7 /* PBXTargetDependency */,
+			);
+			name = VolumeManagerUITests;
+			productName = VolumeManagerUITests;
+			productReference = 744F339A1DD2C123001C15F7 /* VolumeManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		74DEEFA21DD402F800BFF41B /* VolumeTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74DEEFB31DD402F900BFF41B /* Build configuration list for PBXNativeTarget "VolumeTodayExtension" */;
+			buildPhases = (
+				74DEEF9F1DD402F800BFF41B /* Sources */,
+				74DEEFA01DD402F800BFF41B /* Frameworks */,
+				74DEEFA11DD402F800BFF41B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeTodayExtension;
+			productName = VolumeTodayExtension;
+			productReference = 74DEEFA31DD402F800BFF41B /* VolumeTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744F336E1DD2C123001C15F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = xiabob;
+				TargetAttributes = {
+					744F33751DD2C123001C15F7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WPR8JVVW9L;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					744F338E1DD2C123001C15F7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WPR8JVVW9L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 744F33751DD2C123001C15F7;
+					};
+					744F33991DD2C123001C15F7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WPR8JVVW9L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 744F33751DD2C123001C15F7;
+					};
+					74DEEFA21DD402F800BFF41B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WPR8JVVW9L;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 744F33711DD2C123001C15F7 /* Build configuration list for PBXProject "VolumeManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 744F336D1DD2C123001C15F7;
+			productRefGroup = 744F33771DD2C123001C15F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744F33751DD2C123001C15F7 /* VolumeManager */,
+				744F338E1DD2C123001C15F7 /* VolumeManagerTests */,
+				744F33991DD2C123001C15F7 /* VolumeManagerUITests */,
+				74DEEFA21DD402F800BFF41B /* VolumeTodayExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		744F33741DD2C123001C15F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744F33891DD2C123001C15F7 /* LaunchScreen.storyboard in Resources */,
+				744F33861DD2C123001C15F7 /* Assets.xcassets in Resources */,
+				744F33841DD2C123001C15F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F338D1DD2C123001C15F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F33981DD2C123001C15F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEEFA11DD402F800BFF41B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEEFAC1DD402F900BFF41B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2835702468356E2ABFA44755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolumeManager/Pods-VolumeManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BA88454AF085E3132106E51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F04EDBD858492D316F07C774 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VolumeManager/Pods-VolumeManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744F33721DD2C123001C15F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744F33811DD2C123001C15F7 /* ViewController.m in Sources */,
+				744F337E1DD2C123001C15F7 /* AppDelegate.m in Sources */,
+				744F337B1DD2C123001C15F7 /* main.m in Sources */,
+				744F33AE1DD2CC3E001C15F7 /* VolumeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F338B1DD2C123001C15F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744F33941DD2C123001C15F7 /* VolumeManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744F33961DD2C123001C15F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744F339F1DD2C123001C15F7 /* VolumeManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74DEEF9F1DD402F800BFF41B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74DEEFA91DD402F900BFF41B /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		744F33911DD2C123001C15F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744F33751DD2C123001C15F7 /* VolumeManager */;
+			targetProxy = 744F33901DD2C123001C15F7 /* PBXContainerItemProxy */;
+		};
+		744F339C1DD2C123001C15F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744F33751DD2C123001C15F7 /* VolumeManager */;
+			targetProxy = 744F339B1DD2C123001C15F7 /* PBXContainerItemProxy */;
+		};
+		74DEEFAF1DD402F900BFF41B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74DEEFA21DD402F800BFF41B /* VolumeTodayExtension */;
+			targetProxy = 74DEEFAE1DD402F900BFF41B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		744F33821DD2C123001C15F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744F33831DD2C123001C15F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		744F33871DD2C123001C15F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744F33881DD2C123001C15F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		74DEEFAA1DD402F900BFF41B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74DEEFAB1DD402F900BFF41B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		744F33A11DD2C123001C15F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		744F33A21DD2C123001C15F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		744F33A41DD2C123001C15F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB794B04E0581D88B14AFB8 /* Pods-VolumeManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolumeManager/VolumeManager.entitlements;
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		744F33A51DD2C123001C15F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704348B7F64C748D5A96D97A /* Pods-VolumeManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VolumeManager/VolumeManager.entitlements;
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		744F33A71DD2C123001C15F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeManager.app/VolumeManager";
+			};
+			name = Debug;
+		};
+		744F33A81DD2C123001C15F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VolumeManager.app/VolumeManager";
+			};
+			name = Release;
+		};
+		744F33AA1DD2C123001C15F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VolumeManager;
+			};
+			name = Debug;
+		};
+		744F33AB1DD2C123001C15F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VolumeManager;
+			};
+			name = Release;
+		};
+		74DEEFB11DD402F900BFF41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VolumeTodayExtension/VolumeTodayExtension.entitlements;
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManager.VolumeTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		74DEEFB21DD402F900BFF41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VolumeTodayExtension/VolumeTodayExtension.entitlements;
+				DEVELOPMENT_TEAM = WPR8JVVW9L;
+				INFOPLIST_FILE = VolumeTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiabob.VolumeManager.VolumeTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744F33711DD2C123001C15F7 /* Build configuration list for PBXProject "VolumeManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744F33A11DD2C123001C15F7 /* Debug */,
+				744F33A21DD2C123001C15F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744F33A31DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744F33A41DD2C123001C15F7 /* Debug */,
+				744F33A51DD2C123001C15F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744F33A61DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744F33A71DD2C123001C15F7 /* Debug */,
+				744F33A81DD2C123001C15F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744F33A91DD2C123001C15F7 /* Build configuration list for PBXNativeTarget "VolumeManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744F33AA1DD2C123001C15F7 /* Debug */,
+				744F33AB1DD2C123001C15F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74DEEFB31DD402F900BFF41B /* Build configuration list for PBXNativeTarget "VolumeTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74DEEFB11DD402F900BFF41B /* Debug */,
+				74DEEFB21DD402F900BFF41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 744F336E1DD2C123001C15F7 /* Project object */;
+}

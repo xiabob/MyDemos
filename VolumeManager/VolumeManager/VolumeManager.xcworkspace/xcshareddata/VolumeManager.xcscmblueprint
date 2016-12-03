@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "30D1EE3FA97C496726D2D48AA237AC36B71436EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "30D1EE3FA97C496726D2D48AA237AC36B71436EB" : 9223372036854775807,
+    "433C466303311C930D5493D9E21E4D35BDBAD471" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "85822F57-932A-4B6F-8E08-BFC873FB7877",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "30D1EE3FA97C496726D2D48AA237AC36B71436EB" : "VolumeManager\/",
+    "433C466303311C930D5493D9E21E4D35BDBAD471" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VolumeManager",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VolumeManager\/VolumeManager.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiabob\/VolumeManager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30D1EE3FA97C496726D2D48AA237AC36B71436EB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiabob\/MyDemos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "433C466303311C930D5493D9E21E4D35BDBAD471"
+    }
+  ]
+}
