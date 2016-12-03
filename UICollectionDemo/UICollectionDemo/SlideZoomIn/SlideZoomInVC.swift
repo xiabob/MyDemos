@@ -1,5 +1,5 @@
 //
-//  WaterfallFlowVC.swift
+//  SlideZoomInVC.swift
 //  UICollectionDemo
 //
 //  Created by xiabob on 16/12/3.
@@ -8,38 +8,39 @@
 
 import UIKit
 
-class WaterfallFlowVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    
-    private lazy var flowCollectionView: UICollectionView = {
+class SlideZoomInVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+
+    private lazy var collectionView: UICollectionView = {
         let rect = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
-        let flow = WaterFallFlowLayout()
-        let view = UICollectionView(frame: rect, collectionViewLayout: flow)
+        let flow = SlideZoomInLayout()
+        let view: UICollectionView = UICollectionView(frame: rect, collectionViewLayout: flow)
+        view.backgroundColor = UIColor.white
         view.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         view.delegate = self
         view.dataSource = self
         return view
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
-        view.addSubview(flowCollectionView)
+        view.addSubview(collectionView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        flowCollectionView.reloadData()
+        collectionView.reloadData()
     }
     
     //MARK: - UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,6 +50,7 @@ class WaterfallFlowVC: UIViewController, UICollectionViewDelegateFlowLayout, UIC
                             blue: CGFloat(arc4random()%255) / CGFloat(255),
                             alpha: 1)
         cell.backgroundColor = color
+        
         return cell
     }
     
@@ -56,24 +58,6 @@ class WaterfallFlowVC: UIViewController, UICollectionViewDelegateFlowLayout, UIC
     //MARK: - UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height = CGFloat(arc4random()%100 + 100)
-        
-        return CGSize(width: 0, height: height)
+        return CGSize(width: view.frame.width*0.6, height: view.frame.height*0.6)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 12
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 8
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-
 }

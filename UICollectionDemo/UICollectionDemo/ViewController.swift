@@ -14,7 +14,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     private let dataArray: [Dictionary<String, UIViewController>] = [
         ["瀑布流": WaterfallFlowVC()],
-        ["卡片": CardVC()]
+        ["卡片": CardVC()],
+        ["水平滚动缩放": SlideZoomInVC()]
     ]
     
     override func viewDidLoad() {

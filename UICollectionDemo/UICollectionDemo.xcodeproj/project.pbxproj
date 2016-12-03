@@ -16,6 +16,8 @@
 		743B7CFB1DF2599600E1F0AC /* WaterfallFlowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */; };
 		7478C06E1DF2648E0038CC75 /* CardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C06D1DF2648E0038CC75 /* CardLayout.swift */; };
 		7478C0701DF265DA0038CC75 /* CardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C06F1DF265DA0038CC75 /* CardVC.swift */; };
+		7478C0731DF2983F0038CC75 /* SlideZoomInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C0721DF2983F0038CC75 /* SlideZoomInVC.swift */; };
+		7478C0751DF2985E0038CC75 /* SlideZoomInLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478C0741DF2985E0038CC75 /* SlideZoomInLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		743B7CF91DF2599600E1F0AC /* WaterfallFlowVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallFlowVC.swift; sourceTree = "<group>"; };
 		7478C06D1DF2648E0038CC75 /* CardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardLayout.swift; sourceTree = "<group>"; };
 		7478C06F1DF265DA0038CC75 /* CardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardVC.swift; sourceTree = "<group>"; };
+		7478C0721DF2983F0038CC75 /* SlideZoomInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideZoomInVC.swift; sourceTree = "<group>"; };
+		7478C0741DF2985E0038CC75 /* SlideZoomInLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideZoomInLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		743B7CE31DF2573000E1F0AC /* UICollectionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7478C0711DF2982D0038CC75 /* SlideZoomIn */,
 				7478C06C1DF264690038CC75 /* Card */,
 				743B7CF61DF2594500E1F0AC /* WaterfallFlow */,
 				743B7CE41DF2573000E1F0AC /* AppDelegate.swift */,
@@ -90,6 +95,15 @@
 				7478C06F1DF265DA0038CC75 /* CardVC.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		7478C0711DF2982D0038CC75 /* SlideZoomIn */ = {
+			isa = PBXGroup;
+			children = (
+				7478C0721DF2983F0038CC75 /* SlideZoomInVC.swift */,
+				7478C0741DF2985E0038CC75 /* SlideZoomInLayout.swift */,
+			);
+			path = SlideZoomIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7478C0701DF265DA0038CC75 /* CardVC.swift in Sources */,
+				7478C0731DF2983F0038CC75 /* SlideZoomInVC.swift in Sources */,
 				7478C06E1DF2648E0038CC75 /* CardLayout.swift in Sources */,
 				743B7CF81DF2596700E1F0AC /* WaterFallFlowLayout.swift in Sources */,
 				743B7CE71DF2573000E1F0AC /* ViewController.swift in Sources */,
+				7478C0751DF2985E0038CC75 /* SlideZoomInLayout.swift in Sources */,
 				743B7CE51DF2573000E1F0AC /* AppDelegate.swift in Sources */,
 				743B7CFB1DF2599600E1F0AC /* WaterfallFlowVC.swift in Sources */,
 			);

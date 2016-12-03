@@ -40,6 +40,7 @@ class CardLayout: UICollectionViewFlowLayout {
     
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        //由于collectionView在滑动过程中会不断修改cell的位置（保证吸顶效果），所以需要不断重新计算所有布局属性的信息
         return true
     }
 }
