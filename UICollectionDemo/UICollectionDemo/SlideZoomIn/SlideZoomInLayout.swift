@@ -31,15 +31,19 @@ class SlideZoomInLayout: UICollectionViewFlowLayout {
         guard let attributes = super.layoutAttributesForElements(in: rect) else {return nil}
         
         //collectionView中心位置
-        let center = collectionView!.bounds.midX
-        for item in attributes {
-            let offset = abs(item.center.x - center)
-            //根据cell与中心点间的间距来缩放大小
-            let scale = 1 - offset/(collectionView!.frame.width)
-            item.transform = item.transform.scaledBy(x: scale, y: scale)
-        }
+        let centerX = collectionView!.bounds.midX
         
-        return attributes
+        return attributes.map({ (item) -> UICollectionViewLayoutAttributes in
+            let attrs = item.copy() as! UICollectionViewLayoutAttributes
+            
+            let offset = abs(item.center.x - centerX)
+            //根据cell与中心点间的间距来缩放大小
+            let scale = max(1 - offset/(collectionView!.frame.width), 0.01)
+            //这个有问题，scale值是正确的，但是有的时候cell的大小并没有改变,iPhone 6s iOS 10.1.1，苹果的bug？
+            attrs.transform = CGAffineTransform(scaleX: scale, y: scale)
+            
+            return attrs
+        })
     }
     
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
