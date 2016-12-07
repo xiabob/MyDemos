@@ -7,3 +7,5 @@
 水平滚动缩放
 
 拖动排序（轮子：https://github.com/lxcid/LXReorderableCollectionViewFlowLayout ）
+
+各种炫酷的卡片效果（https://github.com/nicklockwood/iCarousel ）
