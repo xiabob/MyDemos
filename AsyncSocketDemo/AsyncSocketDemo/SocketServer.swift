@@ -28,23 +28,25 @@ class SocketServer: NSObject, GCDAsyncSocketDelegate {
     //MARK: - GCDAsyncSocketDelegate
     func socket(_ sock: GCDAsyncSocket, didAcceptNewSocket newSocket: GCDAsyncSocket) {
         sockets.append(newSocket)
-        newSocket.readData(withTimeout: -1, tag: 1)
+        newSocket.readData(withTimeout: -1, tag: -1)
     }
     
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         let result = String(data: data, encoding: String.Encoding.utf8) ?? ""
-        if tag == 1 {
+        //验证信息
+        if tag == -1 {
             if result != "@" {
                 sockets.last?.disconnect()
                 sockets.removeLast()
             } else {
-                let data = "hello".data(using: String.Encoding.utf8) ?? Data()
-                sockets.last?.write(data, withTimeout: -1, tag: 0)
+                let data = "hello\r\n".data(using: String.Encoding.utf8) ?? Data()
+                sockets.last?.write(data, withTimeout: -1, tag: -1)
             }
         }
+        
         print("tag:\(tag) --> server:\(result)")
         
-        let data = "from server".data(using: String.Encoding.utf8) ?? Data()
+        let data = "from server\r\n".data(using: String.Encoding.utf8) ?? Data()
         sock.write(data, withTimeout: -1, tag: 0)
     }
     

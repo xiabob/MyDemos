@@ -33,7 +33,7 @@ class ViewController: UIViewController, GCDAsyncSocketDelegate {
             try socket.connect(toHost: "127.0.0.1", onPort: 1024)
             //发送认证?
             let data = "@".data(using: String.Encoding.utf8) ?? Data()
-            socket.write(data, withTimeout: -1, tag: 0)
+            socket.write(data, withTimeout: -1, tag: -1)
         } catch {
             print("connect error:\(error)")
         }
@@ -53,8 +53,8 @@ class ViewController: UIViewController, GCDAsyncSocketDelegate {
     //发送心跳，保持长连接
     func sendHeartBeat() {
         print("sendHeartBeat")
-        let data = "1".data(using: String.Encoding.utf8) ?? Data()
-        socket.write(data, withTimeout: -1, tag: 0)
+        let data = "HeartBeat".data(using: String.Encoding.utf8) ?? Data()
+        socket.write(data, withTimeout: -1, tag: -2)
     }
 
     
@@ -78,7 +78,8 @@ class ViewController: UIViewController, GCDAsyncSocketDelegate {
     //发送消息成功之后回调
     func socket(_ sock: GCDAsyncSocket, didWriteDataWithTag tag: Int) {
         //读取返回的消息
-        socket.readData(withTimeout: -1, tag: 0)
+        //使用\r\n和crlfData()将“粘黏”在一起的数据分隔开，便于解析数据。所以服务端发送的消息必须以\r\n结尾。
+        socket.readData(to: GCDAsyncSocket.crlfData(), withTimeout: -1, tag: 0)
     }
     
     //读取消息成功后回调
