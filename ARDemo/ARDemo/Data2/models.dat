@@ -1,0 +1,20 @@
+2
+
+#models/TheTARDISfinal.obj
+#94.5 118.25 0.0
+#0.0 1.0 0.0 0.0
+#16.0 16.0 16.0
+#MARKER 1
+
+models/egg.obj
+95.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 0.0
+MARKER 1
+
+models/egg.obj
+95 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 0.0
+MARKER 2
+
