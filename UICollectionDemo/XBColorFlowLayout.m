@@ -30,7 +30,7 @@
     XBCollectionViewLayoutAttributes *attr = (XBCollectionViewLayoutAttributes *)layoutAttributes;
     self.backgroundColor = attr.backgroundColor;
     
-    //改变响应链中的位置，否则DecorationView会遮住cell，无法点击
+    //改变响应链中的位置，否则DecorationView会遮住cell，无法点击（当前layout被继承时，必须有这一步，正常情况下设置zIndex即可。）
     [self.superview sendSubviewToBack:self];
 }
 
