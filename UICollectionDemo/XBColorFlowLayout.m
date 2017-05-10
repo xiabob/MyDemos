@@ -73,12 +73,11 @@
 
 - (void)prepareLayout {
     [super prepareLayout];
+    [self configDecorationView];
 }
 
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSMutableArray *attributesToReturn = [[super layoutAttributesForElementsInRect:rect] mutableCopy];
-    
-    [self configDecorationView];
     
     NSMutableArray *decorationAttributes = [NSMutableArray new];
     for (XBCollectionViewLayoutAttributes *attr in self.decorationViewAttrs) {
@@ -94,19 +93,14 @@
 
 - (void)configDecorationView {
     id<UICollectionViewDelegateFlowLayout> delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
-    id<UICollectionViewDataSource> dataSource = self.collectionView.dataSource;
-    
-    NSUInteger numberOfSections = 1;
-    if ([dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
-        numberOfSections = [dataSource numberOfSectionsInCollectionView:self.collectionView];
-    }
-    
+
+    NSUInteger numberOfSections = self.collectionView.numberOfSections;
     [self.decorationViewAttrs removeAllObjects];
     for (NSUInteger section = 0; section < numberOfSections; section++) {
-        NSUInteger numberOfItems = 0;
-        if ([dataSource respondsToSelector:@selector(collectionView:numberOfItemsInSection:)]) {
-            numberOfItems = [dataSource collectionView:self.collectionView numberOfItemsInSection:section];
-        }
+        //不要通过代理方法获得numberOfItems，因为通过代理获得的值可能和实际不符合，可能会发生以下crash：
+        //1、Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'no UICollectionViewLayoutAttributes instance for -layoutAttributesForDecorationViewOfKindOfKind: kXBUICollectionViewSectionBackgroundColor at path <NSIndexPath: 0xc000000000000016> {length = 2, path = 0 - 0}'
+        //2、*** Terminating app due to uncaught exception 'NSRangeException', reason: '*** -[__NSArrayM objectAtIndex:]: index 8 beyond bounds [0 .. 7]'
+        NSInteger numberOfItems = [self.collectionView numberOfItemsInSection:section];
         if (numberOfItems > 0) {
             UICollectionViewLayoutAttributes *firstItem = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
             UICollectionViewLayoutAttributes *lastItem = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForItem:numberOfItems-1 inSection:section]];
