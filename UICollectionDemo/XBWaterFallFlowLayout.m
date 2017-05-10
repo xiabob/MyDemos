@@ -50,16 +50,9 @@
     [self.cellLayoutAttributesArray removeAllObjects];
     [self.supplementaryViewLayoutAttributesArray removeAllObjects];
     
-    NSUInteger section = 1;
-    if ([dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {
-        section = [dataSource numberOfSectionsInCollectionView:self.collectionView];
-    }
-    
+    NSUInteger section = self.collectionView.numberOfSections;
     for (NSUInteger i=0; i<section; i++) {
-        NSUInteger numberOfItems = 1;
-        if ([dataSource respondsToSelector:@selector(collectionView:numberOfItemsInSection:)]) {
-            numberOfItems = [dataSource collectionView:self.collectionView numberOfItemsInSection:i];
-        }
+        NSInteger numberOfItems = [self.collectionView numberOfItemsInSection:section];
         
         UIEdgeInsets insets = self.sectionInset;
         if ([delegate respondsToSelector:@selector(collectionView:layout:insetForSectionAtIndex:)]) {
