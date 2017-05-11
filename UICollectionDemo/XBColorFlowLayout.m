@@ -91,6 +91,18 @@
     return attributesToReturn;
 }
 
+- (UICollectionViewLayoutAttributes *)layoutAttributesForDecorationViewOfKind:(NSString *)elementKind atIndexPath:(NSIndexPath *)indexPath {
+    if ([elementKind isEqualToString:kSectionBackgroundColor]) {
+        for (UICollectionViewLayoutAttributes *attr in self.decorationViewAttrs) {
+            if (attr.indexPath.section == indexPath.section) {
+                return attr;
+            }
+        }
+    }
+    
+    return [super layoutAttributesForDecorationViewOfKind:elementKind atIndexPath:indexPath];
+}
+
 - (void)configDecorationView {
     id<UICollectionViewDelegateFlowLayout> delegate = (id<UICollectionViewDelegateFlowLayout>)self.collectionView.delegate;
 
