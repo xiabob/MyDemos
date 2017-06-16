@@ -31,6 +31,7 @@
     self.backgroundColor = attr.backgroundColor;
     
     //改变响应链中的位置，否则DecorationView会遮住cell，无法点击（当前layout被继承时，必须有这一步，正常情况下设置zIndex即可。）
+    //当被继承使用时需要这样（XBLeftAlignmentFlowLayout继承了），否则仅仅下面的‘attr.zIndex = -1;’就可以了。
     [self.superview sendSubviewToBack:self];
 }
 
@@ -125,6 +126,18 @@
             CGRect sectionFrame = CGRectUnion(firstItem.frame, lastItem.frame);
             sectionFrame.origin.x -= sectionInset.left;
             sectionFrame.origin.y -= sectionInset.top;
+            
+            //header
+            CGSize headerSize = self.headerReferenceSize;
+            if ([delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForHeaderInSection:)]) {
+                headerSize = [delegate collectionView:self.collectionView layout:self referenceSizeForHeaderInSection:section];
+            }
+            
+            //footer
+            CGSize footerSize = self.footerReferenceSize;
+            if ([delegate respondsToSelector:@selector(collectionView:layout:referenceSizeForFooterInSection:)]) {
+                footerSize = [delegate collectionView:self.collectionView layout:self referenceSizeForFooterInSection:section];
+            }
             
             if (self.scrollDirection == UICollectionViewScrollDirectionHorizontal) {
                 sectionFrame.size.width += sectionInset.left + sectionInset.right;
